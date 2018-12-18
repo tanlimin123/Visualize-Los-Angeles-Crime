@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crime in Los Angeles</title>
+    <link href="../styles/common.css" rel="stylesheet">
+    <script src="../scripts/Plugin/jquery-3.3.1.min.js"></script>
+    <script src="../scripts/Plugin/echarts.min.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/Time.js"></script>
+</head>
+<body>
+<!--顶部-->
+<header class="header left">
+    <div class="left nav">
+        <ul>
+            <li ><a href="index.html">Data Description</a> </li>
+            <li><a href="Victim.html">Victim</a></li>
+            
+            </ul>
+    </div>
+    <div class="header_center left" style="position:relative">
+        
+        <h2><strong>Crime in Los Angeles</strong></h2>
+
+    </div>
+    <div class="right nav text_right">
+        <ul>
+         <li class="nav_active"><a  href="Time.html">Time</a> </li>
+            <li><a href="Crime.html">Crime</a> </li>
+        </ul>
+    </div>
+
+</header>
+<!--内容部分-->
+<div class="con left" style="width:50%;">
+    <!--统计分析图-->
+    <div class="div_any">
+        <div class="left div_any01" style="width:100%;">
+            <div class="div_any_child" style="width:98%;position:relative;height: 420px;">
+                <div class="div_any_title">Crime Occurred By Week </div>
+                <div id="histogramChart1"  style="width: 80%;display: inline-block;height: 400px;margin-top: 15px;"></div>
+               
+               
+            </div>
+        </div>
+        <div class="left div_any01" style="width:48%;">
+          <div class="div_any_child" style="height: 420px;">
+              <div class="div_any_title">Crime Ouccured By Hour</div>
+              <p id="histogramChart2" class="p_chart03" style="height:450px;"></p>
+
+          </div>
+        </div>
+          <div class="left div_table_box" style="width: 48%;">
+              <div class="div_any_child" style="height: 420px;">
+                  <div class="div_any_title">Comment</div>
+                 <div class='p_text P_text_div'> 
+
+                    <p class="white"> <font size="5">The number of crimes on weekends has dropped compared to weekday. It is possible that most of the crimes are on the streets. On weekend, the number of people on the streets is reduced and the number of crimes is reduced. Similarly, the 12:00 noon is the peak time of crime. We can speculate that the crime rate is related to the flow of people.</font></p>
+                  
+                   </div>  
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div class="con right" style="width:50%;">
+  <div class="div_any">
+      <div class="left div_any01" style="width:100%;">
+          <div class="div_any_child" style="width:98%;position:relative;height: 420px;">
+              <div class="div_any_title">Compare Cirme Reported and Cirme Occurred</div>
+              <!-- <div id="histogramChart3"  style="width: 45%;display: inline-block;height: 400px;margin-top: 15px;"></div> -->
+              <div id="lineChart2"  style="width: 80%;height: 85%;display: inline-block;margin-left: 10%;margin-top: 2%"></div>
+          </div>
+      </div>
+      <div class="left div_any01" style="width:48%;">
+        <div class="div_any_child" style="height: 420px;">
+            <div class="div_any_title">Crime Occurred By Year</div>
+            <p id="pieChart1" class="p_chart" style="height: 400px;"></p>
+        </div>
+      </div>
+      <div class="right div_any01" style="width:48%;">
+          <div class="div_any_child" style="height: 420px;">
+              <div class="div_any_title">Comment</div>
+             <div class='p_text P_text_div'> 
+
+                    <p class="white"> <font size="6">I found that the number one every month is the peak period of criminals, but the number of criminals reported is relatively small at this time, and the crime rate has decreased after 2016.</font></p>
+                  
+                   </div> 
+          </div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crime in Los Angeles</title>
+    <link href="../styles/common.css" rel="stylesheet">
+    <script src="../scripts/Plugin/jquery-3.3.1.min.js"></script>
+    <script src="../scripts/Plugin/echarts.min.js"></script>
+    <script src="../scripts/Plugin/bmap.min.js"></script>
+    <script src="../scripts/Plugin/echarts-wordcloud.min.js"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=LelFSt6BfykGf8m3PB5zr8LaXAG2cMg6"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/Crime.js"></script>
+</head>
+<body>
+<!--顶部-->
+<header class="header left">
+    <div class="left nav">
+        <ul>
+            <li ><a href="index.html">Data Description</a> </li>
+            <li ><a href="Victim.html">Victim</a> </li>
+            
+            </ul>
+    </div>
+    <div class="header_center left" style="position:relative">
+        
+        <h2><strong>Crime in Los Angeles</strong></h2>
+
+    </div>
+    <div class="right nav text_right">
+        <ul>
+         <li ><a href="Time.html">Time</a> </li>
+         <li class="nav_active"><a href="Crime.html"><i class="nav_4"></i>Crime</a> </li>
+        </ul>
+    </div>
+
+</header>
+<!--内容部分-->
+<div class="con left">
+  <!--数据总概-->
+  <div class="con_div">
+      <div class="con_div_text left">
+          <div class="con_div_text01 left">
+              
+              <div class=" text01_div">
+                  <p>At what place is it easy to trigger what type of crime?</p>
+                 
+              </div>
+          </div>
+          
+      </div>
+      <div class="con_div_text left">
+          <div class="con_div_text01 left">
+              
+              <div class=" text01_div">
+                  <p>What is the means of crime?</p>
+                  
+              </div>
+          </div>
+          
+      </div>
+      <div class="con_div_text left">
+
+          <div class="con_div_text01 left">
+             
+              <div class="text01_div">
+                  <p>What kind of threat will be suffered in the parking lot?</p>
+                  
+              </div>
+          </div>
+          
+      </div>
+  </div>
+    <!--统计分析图-->
+    <div class="div_any">
+        <div class="left div_any06">
+            <div class="div_any_child">
+                <div class="div_any_title">Criminal Type And Place</div>
+                <p id="CrimeChart1" class="p_chart02"></p>
+            </div>
+            <div class="div_any_child">
+               
+                   <div class='p_text P_text_div'> 
+
+                    <p class="white"> <font size="6">
+Parking lots and streets are the places where things are most easily stolen. The cars parked in the parking lot and the finances parked in the roadside cars are easily stolen.</font></p>
+                  
+                   </div> 
+            </div>
+            
+        </div>
+
+        <div class="left div_any06">
+            <div class="div_any_child">
+                <div class="div_any_title">Victim Descent By Crime</div>
+                <p id="CrimeChart2" class="p_chart"></p>
+            </div>
+            <div class="div_any_child">
+               
+                  <div class='p_text P_text_div'> 
+
+                    <p class="white"> <font size="6">
+People are the most vulnerable to Verbal Threat and Hand Gun</font></p>
+                  
+                   </div> 
+                   
+            </div>
+           
+        </div>
+        
+        <div class="left div_any06">
+            <div class="div_any_child">
+                <div class="div_any_title">Victim Descent By Crime</div>
+                <p id="CrimeChart3" class="p_chart"></p>
+            </div>
+            <div class="div_any_child">
+               
+                   <div class='p_text P_text_div'> 
+
+                    <p class="white"> <font size="6">The most common way of committing crimes in the parking lot is through the criminal’s strong arm.</font></p>
+                  
+                   </div> 
+                   
+            </div>
+           
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
